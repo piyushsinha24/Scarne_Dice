@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
                     roll.setEnabled(true);
                     hold.setEnabled(true);
                     Toast.makeText(getApplicationContext(), "User's Turn", Toast.LENGTH_SHORT).show();
-                    if (computer_overall_score>50)
+                    if (computer_overall_score>=50)
                     {
                         Toast.makeText(getApplicationContext(), "Computer has won!", Toast.LENGTH_SHORT).show();
                         reset();
