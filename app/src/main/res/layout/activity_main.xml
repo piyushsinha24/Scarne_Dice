@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.piyush.scarnedice.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Score:"
+        android:id="@+id/userscore_textview"
+        android:padding="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer Score:"
+        android:id="@+id/compscore_textview"
+        android:padding="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn Score"
+        android:id="@+id/turn_textview"
+        android:padding="20dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dice1"
+        android:id="@+id/dice_img"
+        android:padding="20dp"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+        <Button
+            android:id="@+id/rollbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ROLL"
+            android:onClick="rollbtn"/>
+        <Button
+            android:id="@+id/holdbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOLD"
+            android:onClick="holdbtn"/>
+        <Button
+            android:id="@+id/resetbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESET"
+            android:onClick="resetbtn"/>
+    </LinearLayout>
+</LinearLayout>
